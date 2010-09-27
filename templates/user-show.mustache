@@ -1,0 +1,22 @@
+{{#user}}
+    <div class="profile">
+        <div class="userhead">
+            <div class="avatar">
+                {{#gravatar_id}}<img src="http://gravatar.com/avatar/{{gravatar_id}}?s=64">{{/gravatar_id}}
+            </div>
+            <h1>{{login}}</h1>
+        </div>
+        <dl>
+            {{#name}}<dt>Name</dt><dd class="name">{{name}}</dd>{{/name}}
+            {{#location}}<dt>Location</dt><dd class="location">{{location}}</dd>{{/location}}
+            {{#company}}<dt>Company</dt><dd class="company">{{company}}</dd>{{/company}}
+            {{#blog}}<dt>Blog</dt><dd class="blog">{{blog}}</dd>{{/blog}}
+        </dl>
+        <ul class="rounded">
+            <li class="arrow"><a href="#/user/show/{{login}}/followers">{{followers_count}} Followers</a></li>
+            <li class="arrow"><a href="#/user/show/{{login}}/following">{{following_count}} Following</a></li>
+            <li class="arrow"><a href="#/repos/show/{{login}}">{{public_repo_count}} Public repos</a></li>
+            <li class="arrow"><a href="#/gists/{{login}}">{{public_gist_count}} Public gists</a></li>
+        </ul>
+    </div>
+{{/user}}

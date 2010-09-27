@@ -1,0 +1,11 @@
+<ul class="gists">
+    {{#gists}}
+        <li class="arrow">
+            <a href="#/gists/{{username}}/{{repo}}">Gist #{{repo}}</a>
+            {{#description}}<a href="#/gists/{{username}}/{{repo}}">{{description}}</a>{{/description}}
+        </li>
+    {{/gists}}
+    {{^gists}}
+        <li class="empty">No gists</li>
+    {{/gists}}
+</ul>

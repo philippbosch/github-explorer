@@ -1,0 +1,8 @@
+<ul class="repositories">
+    {{#repositories}}
+        <li class="arrow"><a href="#/repos/show/{{username}}/{{name}}">{{name}}</a></li>
+    {{/repositories}}
+    {{^repositories}}
+        <li class="empty">No repositories</li>
+    {{/repositories}}
+</ul>

@@ -1,0 +1,13 @@
+{{#gists}}
+    <div class="gist">
+        <h1>{{repo}}</h1>
+        {{#description}}<p>{{description}}</p>{{/description}}
+        
+        
+        <ul class="rounded">
+            {{#files}}
+                <li class="arrow"><a href="http://gist.github.com/raw/{{gist_id}}/{{.}}">{{.}}</a></li>
+            {{/files}}
+        </ul>
+    </div>
+{{/gists}}

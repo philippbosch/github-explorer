@@ -1,0 +1,8 @@
+<ul class="userlist">
+    {{#users}}
+        <li class="arrow"><a href="#/user/show/{{.}}">{{.}}</a></li>
+    {{/users}}
+    {{^users}}
+        <li class="empty">Not following anyone</li>
+    {{/users}}
+</ul>

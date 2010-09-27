@@ -1,0 +1,127 @@
+/* line 6, ../src/app.scss */
+#jqt ul, #jqt li {
+  -webkit-background-clip: border;
+}
+/* line 11, ../src/app.scss */
+#jqt dl {
+  color: black;
+  background: #fff;
+  border: 1px solid #B4B4B4;
+  font: bold 17px "Helvetica Neue", Helvetica;
+  padding: 0;
+  margin: 15px 10px 17px 10px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+}
+/* line 21, ../src/app.scss */
+#jqt dt, #jqt dd {
+  border-top: 1px solid #B4B4B4;
+  list-style-type: none;
+  padding: 10px 10px 10px 10px;
+}
+/* line 26, ../src/app.scss */
+#jqt dt:first-child, #jqt dt:nth-child(2), #jqt dd:first-child, #jqt dd:nth-child(2) {
+  border-top: 0;
+}
+/* line 30, ../src/app.scss */
+#jqt dt:first-child, #jqt dt:first-child a, #jqt dd:first-child, #jqt dd:first-child a {
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+}
+/* line 35, ../src/app.scss */
+#jqt dt:last-child, #jqt dt:last-child a, #jqt dd:last-child, #jqt dd:last-child a {
+  -webkit-border-bottom-left-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+}
+/* line 41, ../src/app.scss */
+#jqt dt {
+  width: 100px;
+  text-align: right;
+  font-size: 13px;
+  padding-top: 14px;
+  color: #516691;
+  position: absolute;
+}
+/* line 50, ../src/app.scss */
+#jqt dd {
+  color: #000;
+  margin-left: 110px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* line 59, ../src/app.scss */
+#jqt .userhead {
+  margin: 15px 10px 17px 10px;
+  min-height: 64px;
+  position: relative;
+}
+/* line 64, ../src/app.scss */
+#jqt .userhead h1 {
+  margin-left: 84px;
+  color: #000;
+  line-height: 64px;
+}
+/* line 71, ../src/app.scss */
+#jqt .avatar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  -webkit-background-clip: padding-box;
+  background: url("../img/avatar.png") center center no-repeat;
+  border: 1px solid #9F9F9F;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 83, ../src/app.scss */
+#jqt .avatar img {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 89, ../src/app.scss */
+#jqt ul li.arrow a + a {
+  padding: 0;
+}
+/* line 93, ../src/app.scss */
+#jqt #main > div > p {
+  margin: 10px 20px 12px 20px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
+  color: #000;
+}
+/* line 105, ../src/app.scss */
+#jqt .panel {
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-box-sizing: border-box;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -webkit-transition-duration: .35s;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0) rotate(0) scale(1);
+}
+/* line 116, ../src/app.scss */
+#jqt .panel.hidden.in {
+  -webkit-transform: translate3d(100%, 0, 0);
+}
+/* line 120, ../src/app.scss */
+#jqt .panel.hidden.out {
+  -webkit-transform: translate3d(-100%, 0, 0);
+}
